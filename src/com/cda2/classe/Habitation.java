@@ -7,16 +7,22 @@ public class Habitation {
     private String nom;
     private double longueur;
     private double largeur;
+    private int nbrEtage = 1;
 
     /*-------------------------------------------
                     constructeurs
     -------------------------------------------*/
     public Habitation(){}
-
-    public Habitation(String nom, double longueur, double largeur) {
+    public Habitation(String nom, double longueur, double largeur){
         this.nom = nom;
         this.longueur = longueur;
         this.largeur = largeur;
+    }
+    public Habitation(String nom, double longueur, double largeur, int nbrEtage) {
+        this.nom = nom;
+        this.longueur = longueur;
+        this.largeur = largeur;
+        this.nbrEtage = nbrEtage;
     }
 
     /*-------------------------------------------
@@ -47,11 +53,21 @@ public class Habitation {
         this.largeur = largeur;
     }
 
+    public int getNbrEtage() {
+        return nbrEtage;
+    }
+
+    public void setNbrEtage(int nbrEtage) {
+        this.nbrEtage = nbrEtage;
+    }
     /*-------------------------------------------
                     méthodes
     -------------------------------------------*/
 
     public double surface() {
-        return this.longueur * this.largeur;
+        return this.longueur * this.largeur * this.nbrEtage;
+    }
+    public void afficherSurface() {
+        System.out.println("L'habitation qui se nomme : " +this.getNom() + " à une surface de " + this.surface() + " m²");
     }
 }
