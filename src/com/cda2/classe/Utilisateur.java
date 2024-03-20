@@ -1,13 +1,17 @@
 package com.cda2.classe;
 
 public class Utilisateur {
-    //attributs
+    /*-------------------------------------------
+                    Attributs
+    -------------------------------------------*/
     private String nom;
     private String prenom;
     private String email;
     private String password;
 
-    //constructeurs
+   /*-------------------------------------------
+                   Constructeurs
+   -------------------------------------------*/
     public Utilisateur(){};
 
     public Utilisateur(String nom, String prenom, String email, String password) {
@@ -17,7 +21,9 @@ public class Utilisateur {
         this.password = password;
     }
 
-    //getter et setters
+    /*-------------------------------------------
+                    Getters et Setters
+    -------------------------------------------*/
 
 
     public String getNom() {
@@ -52,7 +58,9 @@ public class Utilisateur {
         this.password = password;
     }
 
-    //méthode
+    /*-------------------------------------------
+                    Méthodes
+    -------------------------------------------*/
     public String toString() {
         return this.nom + " " + this.prenom;
     }
