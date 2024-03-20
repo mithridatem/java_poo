@@ -14,6 +14,9 @@ public class Main {
         System.out.println("Le véhicule : " + moto.getNom() + " a une nouvelle vitesse de : " + moto.getVitesse());
         moto.boost();
         System.out.println("Le véhicule : " + moto.getNom() + " a une nouvelle vitesse de : " + moto.getVitesse());
-
+        //test de la méthode plusRapide
+        System.out.println("Le véhicule le plus rapide est : " + moto.plusRapide(voiture));
+        System.out.println("Le véhicule le plus rapide est : " + voiture.plusRapide(camion));
+        System.out.println("Le véhicule le plus rapide est : " + voiture.plusRapide(moto));
     }
 }
