@@ -1,15 +1,14 @@
+import com.cd2.game.Assassin;
+import com.cd2.game.Guerrier;
+import com.cd2.game.Partie;
 import com.cda2.classe.*;
 
 public class Main {
     public static void main(String[] args) {
-        //instance d'objet Animal
-        Animal poule = new Animal("poule", 30, 1);
-
-        //instance d'objet Chat
-        Chat matou = new Chat("matou", 40, 4, 8);
-        poule.dormir();
-        matou.dormir();
-        matou.dormirParent();
-        matou.dormir(10);
+        //instancier les objets
+        Assassin assassin = new Assassin("Assassin", 200, 10, 5, 10);
+        Guerrier guerrier = new Guerrier("Guerrier", 250, 5, 6, 10);
+        Partie partie = new Partie(assassin, guerrier, 10);
+        System.out.println(partie.lancerPartie());
     }
 }
