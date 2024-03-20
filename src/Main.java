@@ -2,16 +2,18 @@ import com.cda2.classe.*;
 
 public class Main {
     public static void main(String[] args) {
-        //instance d'objet Habitation
-        Habitation villa = new Habitation("Villa", 12, 15);
-        Habitation appartement = new Habitation("Appartement", 8, 14);
-        Habitation maison = new Habitation("Maison", 20, 18);
-        Habitation immeuble = new Habitation("Immeuble", 30, 50, 10);
-        //appel de la méthode surface
-        System.out.println("L'habitation qui se nomme : " + villa.getNom() + " à une surface de " + villa.surface() + " m²");
-        System.out.println("L'habitation qui se nomme : " + appartement.getNom() + " à une surface de " + appartement.surface() + " m²");
-        System.out.println("L'habitation qui se nomme : " + maison.getNom() + " à une surface de " + maison.surface() + " m²");
-        System.out.println("L'habitation qui se nomme : " + immeuble.getNom() + " à une surface de " + immeuble.surface() + " m²");
-        villa.afficherSurface();
+        //instance d'objet Vehicule
+        Vehicule moto = new Vehicule("Moto", 2, 280);
+        Vehicule voiture = new Vehicule("Voiture", 4, 200);
+        Vehicule camion = new Vehicule("Camion", 6, 130 );
+        //appel de la méthode detect
+        System.out.println("Le véhicule " + moto.getNom() + " est de type : " + moto.detect());
+        System.out.println("Le véhicule " + voiture.getNom() + " est de type : " + voiture.detect());
+        System.out.println("Le véhicule " + camion.getNom() + " est de type : " + camion.detect());
+
+        System.out.println("Le véhicule : " + moto.getNom() + " a une nouvelle vitesse de : " + moto.getVitesse());
+        moto.boost();
+        System.out.println("Le véhicule : " + moto.getNom() + " a une nouvelle vitesse de : " + moto.getVitesse());
+
     }
 }

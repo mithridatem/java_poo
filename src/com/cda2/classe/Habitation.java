@@ -12,12 +12,15 @@ public class Habitation {
     /*-------------------------------------------
                     constructeurs
     -------------------------------------------*/
+    //constructeur vide (sans aucun paramètre)
     public Habitation(){}
+    //constructeur 3 paramètres
     public Habitation(String nom, double longueur, double largeur){
         this.nom = nom;
         this.longueur = longueur;
         this.largeur = largeur;
     }
+    //constructeur 4 paramètres (nbrEtage en plus)
     public Habitation(String nom, double longueur, double largeur, int nbrEtage) {
         this.nom = nom;
         this.longueur = longueur;
