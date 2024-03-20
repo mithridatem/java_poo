@@ -6,9 +6,15 @@ import com.cda2.classe.*;
 public class Main {
     public static void main(String[] args) {
         //instancier les objets
-        Assassin assassin = new Assassin("Assassin", 200, 10, 5, 10);
+/*        Assassin assassin = new Assassin("Assassin", 200, 10, 5, 10);
         Guerrier guerrier = new Guerrier("Guerrier", 250, 5, 6, 10);
         Partie partie = new Partie(assassin, guerrier, 10);
-        System.out.println(partie.lancerPartie());
+        System.out.println(partie.lancerPartie());*/
+
+        Chien chien = new Chien("Chien", 60, 15);
+        Chat chat = new Chat("Chat", 40, 4, 2);
+        chien.marcher();
+        chat.marcher();
+
     }
 }
