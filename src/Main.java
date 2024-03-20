@@ -2,21 +2,14 @@ import com.cda2.classe.*;
 
 public class Main {
     public static void main(String[] args) {
-        //instance d'objet Vehicule
-        Vehicule moto = new Vehicule("Moto", 2, 280);
-        Vehicule voiture = new Vehicule("Voiture", 4, 200);
-        Vehicule camion = new Vehicule("Camion", 6, 130 );
-        //appel de la méthode detect
-        System.out.println("Le véhicule " + moto.getNom() + " est de type : " + moto.detect());
-        System.out.println("Le véhicule " + voiture.getNom() + " est de type : " + voiture.detect());
-        System.out.println("Le véhicule " + camion.getNom() + " est de type : " + camion.detect());
+        //instance d'objet Animal
+        Animal poule = new Animal("poule", 30, 1);
 
-        System.out.println("Le véhicule : " + moto.getNom() + " a une nouvelle vitesse de : " + moto.getVitesse());
-        moto.boost();
-        System.out.println("Le véhicule : " + moto.getNom() + " a une nouvelle vitesse de : " + moto.getVitesse());
-        //test de la méthode plusRapide
-        System.out.println("Le véhicule le plus rapide est : " + moto.plusRapide(voiture));
-        System.out.println("Le véhicule le plus rapide est : " + voiture.plusRapide(camion));
-        System.out.println("Le véhicule le plus rapide est : " + voiture.plusRapide(moto));
+        //instance d'objet Chat
+        Chat matou = new Chat("matou", 40, 4, 8);
+        poule.dormir();
+        matou.dormir();
+        matou.dormirParent();
+        matou.dormir(10);
     }
 }
